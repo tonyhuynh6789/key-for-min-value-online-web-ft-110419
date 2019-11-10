@@ -9,5 +9,8 @@ def key_for_min_value(name_hash)
   name_hash.each do |keys, values|
   if smallest_values == nil || values < smallest_values
     smallest_values = values
-    
+    smallest_keys = keys
+  end   
+  end
+smallest_keys
 end 
